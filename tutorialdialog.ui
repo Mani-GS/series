@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TutorialDialog</class>
+ <widget class="QDialog" name="TutorialDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tutorial</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/imgs/series_.png</normaloff>:/icons/imgs/series_.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#btnNext, #btnBack{
+	max-width: 50px;
+}
+
+#btnClose{
+	max-width: 100px;
+}
+
+#lblText{
+	min-height: 350px;
+	min-width: 566px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblText">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="hLay">
+     <item>
+      <widget class="QPushButton" name="btnBack">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/imgs/left_arrow.png</normaloff>:/icons/imgs/left_arrow.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnNext">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/imgs/right_arrow.png</normaloff>:/icons/imgs/right_arrow.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>&amp;Close</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/imgs/delete.png</normaloff>:/icons/imgs/delete.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

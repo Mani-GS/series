@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InsertDialog</class>
+ <widget class="QDialog" name="InsertDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>196</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Insert new series...</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/imgs/series_.png</normaloff>:/icons/imgs/series_.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#txtSeason, #txtEpisode{
+	max-width: 71px;
+}
+
+#txtName{
+	max-width: 300px;
+}
+
+#lblTitle{
+	max-height: 100px;
+	text-align: center;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="btbButtons">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="lblName">
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblSeason">
+       <property name="text">
+        <string>Season</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblEpisode">
+       <property name="text">
+        <string>Episode</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="txtName">
+       <property name="maxLength">
+        <number>99</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtSeason">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtEpisode">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="maxLength">
+        <number>4</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="lblTitle">
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Insert new series</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btbButtons</sender>
+   <signal>accepted()</signal>
+   <receiver>InsertDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btbButtons</sender>
+   <signal>rejected()</signal>
+   <receiver>InsertDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

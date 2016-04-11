@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>imgs/floppy.png</file>
+        <file>imgs/modify.png</file>
+        <file>imgs/plus.png</file>
+	<file>imgs/tick.png</file>
+	<file>imgs/delete.png</file>
+	<file>imgs/up_arrow.png</file>
+	<file>imgs/down_arrow.png</file>
+	<file>imgs/left_arrow.png</file>
+	<file>imgs/right_arrow.png</file>
+	<file>imgs/apply.png</file>
+	<file>imgs/delSeries.png</file>
+	<file>imgs/stop.png</file>
+	<file>imgs/series_.png</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file>series_it.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModifyDialog</class>
+ <widget class="QDialog" name="ModifyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Modify series...</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/imgs/series_.png</normaloff>:/icons/imgs/series_.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel, QLineEdit{
+	max-width: 1000px;
+}
+
+#btnDelete{
+	max-width: 100px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="1" colspan="2">
+    <widget class="QDialogButtonBox" name="btbButtons">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QListWidget" name="lstSeries"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btnUp">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/imgs/up_arrow.png</normaloff>:/icons/imgs/up_arrow.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnDown">
+         <property name="text">
+          <string notr="true"/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/imgs/down_arrow.png</normaloff>:/icons/imgs/down_arrow.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="lblActiveItem">
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You haven't selected an item yet.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblName">
+       <property name="text">
+        <string>Insert new name here</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtNewName"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDelete">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+       <property name="icon">
+        <iconset resource="resources.qrc">
+         <normaloff>:/icons/imgs/delSeries.png</normaloff>:/icons/imgs/delSeries.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btbButtons</sender>
+   <signal>accepted()</signal>
+   <receiver>ModifyDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btbButtons</sender>
+   <signal>rejected()</signal>
+   <receiver>ModifyDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

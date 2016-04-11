@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Series 1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/imgs/series_.png</normaloff>:/icons/imgs/series_.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralWidget{
+	/*min-width: 600px;*/
+	width: auto;
+	height: auto;
+}
+
+#btnAddSeries, #btnModify, #btnSaveAll{
+	min-height: 40px;
+}
+
+#btnAddSeries{
+	max-width: 900px;
+}
+
+#btnModify, #btnSaveAll{
+	max-width: 440px;
+}
+
+#lblTitle{
+	max-width: 902px;
+	min-width: 0px;
+/*	font: 75 italic 36pt &quot;Ubuntu&quot;;*/
+}
+
+QGroupBox{
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 10px;
+
+	min-width: 565px;
+	max-width: 700px;
+	max-height: 77px;
+}
+
+QGroupBox::title{
+	subcontrol-origin: margin;
+	left: 10px;
+	padding: 0 3px 0 3px;
+}
+
+QScrollArea{
+	/*min-width: 585px;*/
+	max-width: 900px;
+}
+
+QLineEdit{
+	max-width:71px;
+}
+
+QLabel{
+	max-width: 75px;
+}
+
+QCheckBox{
+	max-width: 80px;
+}
+
+/*QPushButton{
+	border-radius: 5px;
+	background-color: #D0F0F0;
+}
+
+QPushButton:pressed{
+	background-color: #A0F0F0;
+	border: 1px solid black;
+}*/</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="hLay">
+      <item>
+       <widget class="QPushButton" name="btnModify">
+        <property name="text">
+         <string>&amp;Modify...</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/imgs/modify.png</normaloff>:/icons/imgs/modify.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSaveAll">
+        <property name="text">
+         <string>&amp;Save all</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/imgs/floppy.png</normaloff>:/icons/imgs/floppy.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="btnAddSeries">
+      <property name="text">
+       <string>&amp;Add new TV series</string>
+      </property>
+      <property name="icon">
+       <iconset resource="resources.qrc">
+        <normaloff>:/icons/imgs/plus.png</normaloff>:/icons/imgs/plus.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lblTitle">
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>TV series you're following</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scaCentral">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>618</width>
+         <height>296</height>
+        </rect>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <layout class="QGridLayout" name="scaLayout"/>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
