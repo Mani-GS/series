@@ -4,7 +4,7 @@ With this simple program, you can create a sqlite db and add the last episode/se
 You'll never forget which was the last episode.
 This program uses Qt and sqlite libraries
 
-# Program functionality
+# Features
 - Add new TV Series to a sqlite database;
 - Keep track about last season and episode watched, with a "finish" flag used at users leisure;
 - Rename series, reorder them or remove them.
