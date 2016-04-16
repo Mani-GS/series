@@ -345,8 +345,8 @@ Grazie per aver scaricato l&apos;app, spero ti piaccia!</translation>
         <source>In order to add a new series, just click Add new TV series button, it allows
 you to choose name, espisode and season for a new series!
 A dialog will be showed to do this operation, just insert name, season and
-episode (optional) and press Ok. The new series will be displayed immediatly.</source>
-        <oldsource>In order to add a new series, just click Add new TV seriesbutton, it allows
+episode (optional) and press Ok. The new series will be displayed immediately.</source>
+        <oldsource>In order to add a new series, just click Add new TV series button, it allows
 you to choose name, espisode and season for a new series!
 A dialog will be showed to do this operation, just insert name, season and
 episode (optional) and press Ok. The new series will be displayed immediatly.</oldsource>
