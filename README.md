@@ -12,10 +12,10 @@ To install this program make sure you installed the following libraries:
 
 First of all, download the latest release, then extract the source code in one folder.
 Open a terminal in that folder and execute:
-´´´script
+```script
 qmake series.pro
 make
-´´´
+```
 It will create a lot of file, you need only one of them: the ELF, named **series**. Double click it and the program will start!
 
 # Features
