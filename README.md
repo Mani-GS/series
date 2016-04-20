@@ -5,7 +5,7 @@ You'll never forget which was the last episode.
 This program uses Qt and sqlite libraries
 
 # How to install
-To install this program make sure you installed the following libraries:
+To install this program make sure you've installed the following libraries:
 - qt5-default;
 - qtcreator (optional);
 - libsqlite3-dev.
@@ -13,10 +13,10 @@ To install this program make sure you installed the following libraries:
 First of all, download the latest release, then extract the source code in one folder.
 Open a terminal in that folder and execute:
 ```script
-qmake series.pro
-make
+$ qmake series.pro
+$ make
 ```
-It will create a lot of file, you need only one of them: the ELF, named **series**. Double click it and the program will start!
+It will create a lot of files, you need only one of them: the ELF, named **series**. Double click it and the program will start!
 
 # Features
 - Add new TV Series to a sqlite database;
