@@ -21,7 +21,7 @@ It will create a lot of files, you need only one of them: the ELF, named **serie
 
 If you want to create a .desktop file you can use series_.png image (128x128) as file icon.
 
-## Install on Ubuntu Wily
+## Install on Ubuntu Trusty or Wily
 You can download and install the binary package from the PPA repository **mani-ddev/series**. Open a terminal and execute:
 
 ```script
