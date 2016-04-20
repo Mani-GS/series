@@ -36,7 +36,7 @@ With this simple program, you can create a sqlite db and add the last episode/se
 You'll never forget which was the last episode.
 This program uses Qt and sqlite libraries</p>
 
-<p>
+<p style="text-align: center">
 <img src="images/main.png"> <br />
 <img src="images/modify.png" style="width: 318px; height: 250px">
 <img src="images/insert.png" style="width: 318px; height: 250px">
@@ -44,6 +44,9 @@ This program uses Qt and sqlite libraries</p>
 
 <h1>
 <a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install</h1>
+
+<h2>
+<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download source code and compile it by yourself</h2>
 
 <p>To install this program make sure you installed the following libraries:</p>
 
@@ -56,11 +59,22 @@ This program uses Qt and sqlite libraries</p>
 <p>First of all, download the latest release, then extract the source code in one folder.
 Open a terminal in that folder and execute:</p>
 
-<pre lang="script"><code>qmake series.pro
-make
+<pre lang="script"><code>$ qmake series.pro
+$ make
 </code></pre>
 
-<p>It will create a lot of file, you need only one of them: the ELF, named <strong>series</strong>. Double click it and the program will start!</p>
+<p>It will create a lot of file, you need only one of them: the ELF, named <strong>series</strong>. Double click it and the program will start! <br />
+If you want to create a .desktop file you can use series_.png image (128x128) as file icon.</p>
+
+<h2>
+<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install on Ubuntu Wily</h2>
+
+<p>You can download and install the binary package from the PPA repository mani-ddev/series. Open a terminal and execute:</p>
+
+<pre lang="script"><code>$ sudo add-apt-repository ppa:mani-ddev/series
+$ sudo apt-get update
+$ sudo apt-get install series
+</code></pre>
 
 <h1>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h1>
