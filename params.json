@@ -1,0 +1,6 @@
+{
+  "name": "Series",
+  "tagline": "Keep track of your favourite TV series",
+  "body": "# Series\r\nKeep track of your favourite TV series!\r\nWith this simple program, you can create a sqlite db and add the last episode/season you watched. You can do this for every series you want!\r\nYou'll never forget which was the last episode.\r\nThis program uses Qt and sqlite libraries\r\n\r\n# How to install\r\nTo install this program make sure you installed the following libraries:\r\n- qt5-default;\r\n- qtcreator (optional);\r\n- libsqlite3-dev.\r\n\r\nFirst of all, download the latest release, then extract the source code in one folder.\r\nOpen a terminal in that folder and execute:\r\n```script\r\nqmake series.pro\r\nmake\r\n```\r\nIt will create a lot of file, you need only one of them: the ELF, named **series**. Double click it and the program will start!\r\n\r\n# Features\r\n- Add new TV Series to a sqlite database;\r\n- Keep track about last season and episode watched, with a \"finish\" flag used at users leisure;\r\n- Rename series, reorder them or remove them.\r\n\r\n# TO DO\r\n- Implement cloud service to share the db with other devices\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
