@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <link rel="icon" href="images/series_.png">
 
+    <script type="text/javascript" src="javascripts/main.js">
+    </script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,8 +24,8 @@
     <header>
       <div class="inner">
         <h1>Series</h1>
-        <h2>Keep track of your favourite TV series</h2>
-        <a href="https://github.com/Mani-GS/series" class="button"><small>View project on</small> GitHub</a>
+        <h2 id="title">Keep track of your favourite TV series</h2>
+        <a href="https://github.com/Mani-GS/series" class="button"><small id="viewPrj">View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -32,8 +35,8 @@
           <h1>
 <a id="series" class="anchor" href="#series" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Series</h1>
 
-<p>Keep track of your favourite TV series!
-With this simple program, you can create a sqlite db and add the last episode/season you watched. You can do this for every series you want!
+<p id="introduction">Keep track of your favourite TV series!
+With this simple program you can create a sqlite db and add the last episode/season you watched. You can do this for every series you want!
 You'll never forget which was the last episode.
 This program uses Qt and sqlite libraries</p>
 
@@ -43,13 +46,13 @@ This program uses Qt and sqlite libraries</p>
 <img src="images/insert.png" style="width: 318px; height: 250px">
 </p>
 
-<h1>
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install</h1>
+<h1 id="install">
+<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install (Linux)</h1>
 
-<h2>
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download source code and compile it by yourself</h2>
+<h2 id="install_1">
+<a id="download-source" class="anchor" href="#download-source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download source code and compile it by yourself</h2>
 
-<p>To install this program make sure you installed the following libraries:</p>
+<p id="install_1_1">To compile this program make sure you installed the following libraries:</p>
 
 <ul>
 <li>qt5-default;</li>
@@ -57,20 +60,20 @@ This program uses Qt and sqlite libraries</p>
 <li>libsqlite3-dev.</li>
 </ul>
 
-<p>First of all, download the latest release, then extract the source code in one folder.
+<p id="install_1_2">First of all, download the latest release, then extract the source code in one folder.
 Open a terminal in that folder and execute:</p>
 
 <pre lang="script"><code>$ qmake series.pro
 $ make
 </code></pre>
 
-<p>It will create a lot of files, you need only one of them: the ELF, named <strong>series</strong>. Double click it and the program will start! <br />
+<p id="install_1_3">It will create a lot of files, you need only one of them: the ELF, named <strong>series</strong>. Double click it and the program will start! <br />
 If you want to create a .desktop file you can use series_.png image (128x128) as file icon.</p>
 
-<h2>
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install on Ubuntu Trusty or newer</h2>
+<h2 id="install_2">
+<a id="download-ppa" class="anchor" href="#download-ppa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install on Ubuntu Trusty or newer</h2>
 
-<p>You can download and install the binary package from the PPA repository <strong>mani-ddev/series</strong>. Open a terminal and execute:</p>
+<p id="install_2_1">You can download and install the binary package from the PPA repository <strong>mani-ddev/series</strong>. Open a terminal and execute:</p>
 
 <pre lang="script"><code>$ sudo add-apt-repository ppa:mani-ddev/series
 $ sudo apt-get update
@@ -81,20 +84,21 @@ $ sudo apt-get install series
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h1>
 
 <ul>
-<li>Add new TV Series to a sqlite database;</li>
-<li>Keep track about last season and episode watched, with a "finish" flag used at users leisure;</li>
-<li>Rename series, reorder them or remove them.</li>
+<li id="features_1">Add new TV Series to a sqlite database;</li>
+<li id="features_2">Keep track about last season and episode watched, with a "finish" flag used at users leisure;</li>
+<li id="features_3">Rename series, reorder them or remove them.</li>
 </ul>
 
 <h1>
 <a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TO DO</h1>
 
 <ul>
-<li>Implement cloud service to share the db with other devices</li>
+<li id="todo_1">Implement cloud service to share the db with other devices</li>
 </ul>
         </section>
 
         <aside id="sidebar">
+	  <h2>Linux <small>source code</small></h2>
           <a href="https://github.com/Mani-GS/series/zipball/master" class="button">
             <small>Download</small>
             .zip file
@@ -102,6 +106,12 @@ $ sudo apt-get install series
           <a href="https://github.com/Mani-GS/series/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
+          </a>
+	  COMING SOON:
+	  <h2>Windows <small>pre-built binary</small></h2>
+	  <a href="#" class="button">
+            <small>Download</small>
+            .exe file
           </a>
 
           <p class="repo-owner"><a href="https://github.com/Mani-GS/series"></a> is maintained by <a href="https://github.com/Mani-GS">Mani-GS</a>.</p>
@@ -113,4 +123,6 @@ $ sudo apt-get install series
 
   
   </body>
+
+  <script type="text/javascript">window.onload = init();</script>
 </html>
