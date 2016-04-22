@@ -11,12 +11,13 @@ window.onload = function(){
 
 function init(){
 	var language = "";
-	language = navigator.language;
+	language = window.navigator.language;
+	language = language.substr(0,2);
 	
-	if(language != "en_EN"){
+	if(language != "en"){
 		switch(language){
 			
-			case "it-IT":
+			case "it":
 				changeLanguage(lang_IT);
 				break;
 		}
