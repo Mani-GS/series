@@ -2,6 +2,54 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="it_IT">
 <context>
+    <name>AboutDialog</name>
+    <message>
+        <location filename="aboutdialog.ui" line="14"/>
+        <source>About Series...</source>
+        <translation>Informazioni su Series...</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="95"/>
+        <source>License</source>
+        <translation>Licenza</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="119"/>
+        <source>Author</source>
+        <translation>Autore</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="146"/>
+        <source>Maintainer</source>
+        <translation>Manutentore</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="170"/>
+        <source>e-mail</source>
+        <translation>e-mail</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="194"/>
+        <source>Homepage</source>
+        <translation>Homepage</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="218"/>
+        <source>Source code</source>
+        <translation>Codice sorgente</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="242"/>
+        <source>Language &amp; libraries</source>
+        <translation>Linguaggio e librerie</translation>
+    </message>
+    <message>
+        <location filename="aboutdialog.ui" line="249"/>
+        <source>Written in C++, using Qt and sqlite libraries</source>
+        <translation>Scritto in C++ con l'utilizzo delle librerie Qt e sqlite</translation>
+    </message>
+</context>
+<context>
     <name>InsertDialog</name>
     <message>
         <location filename="insertdialog.ui" line="14"/>
@@ -76,6 +124,26 @@
         <translation>Serie TV che stai seguendo</translation>
     </message>
     <message>
+        <location filename="mainwindow.ui" line="197"/>
+        <source>File</source>
+        <translation>File</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="203"/>
+        <source>?</source>
+        <translation>?</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="212"/>
+        <source>Exit</source>
+        <translation>Esci</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="217"/>
+        <source>About Series...</source>
+        <translation>Info su Series...</translation>
+    </message>
+    <message>
         <location filename="mainwindow.cpp" line="16"/>
         <source>Warning</source>
         <translation>Attenzione</translation>
@@ -121,84 +189,84 @@
         <translation type="vanished">Errore in fase di lettura del database: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="139"/>
+        <location filename="manager.cpp" line="149"/>
         <source>Error while opening the database.</source>
         <translation>Errore in fase di apertura del database.</translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="70"/>
-        <location filename="manager.cpp" line="140"/>
-        <location filename="manager.cpp" line="158"/>
-        <location filename="manager.cpp" line="171"/>
-        <location filename="manager.cpp" line="216"/>
+        <location filename="manager.cpp" line="81"/>
+        <location filename="manager.cpp" line="150"/>
+        <location filename="manager.cpp" line="168"/>
+        <location filename="manager.cpp" line="181"/>
         <location filename="manager.cpp" line="226"/>
-        <location filename="manager.cpp" line="265"/>
-        <location filename="manager.cpp" line="296"/>
-        <location filename="manager.cpp" line="330"/>
-        <location filename="manager.cpp" line="362"/>
-        <location filename="manager.cpp" line="385"/>
-        <location filename="manager.cpp" line="466"/>
+        <location filename="manager.cpp" line="236"/>
+        <location filename="manager.cpp" line="275"/>
+        <location filename="manager.cpp" line="306"/>
+        <location filename="manager.cpp" line="340"/>
+        <location filename="manager.cpp" line="372"/>
+        <location filename="manager.cpp" line="395"/>
+        <location filename="manager.cpp" line="480"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="70"/>
+        <location filename="manager.cpp" line="81"/>
         <source>Fatal error while checking your home.</source>
         <translation>Errore fatale in fase di controllo della tua home.</translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="155"/>
+        <location filename="manager.cpp" line="165"/>
         <source>Error while creating the database: </source>
         <translation>Errore durante la creazione del database: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="213"/>
         <location filename="manager.cpp" line="223"/>
+        <location filename="manager.cpp" line="233"/>
         <source>Error while creating new series: </source>
         <translation>Errore durante la creazione della nuova serie: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="168"/>
+        <location filename="manager.cpp" line="178"/>
         <source>Error while reading from database: </source>
         <translation>Errore durante la lettura dal database: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="450"/>
+        <location filename="manager.cpp" line="464"/>
         <source>ARGH</source>
         <translation>ARGH</translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="450"/>
+        <location filename="manager.cpp" line="464"/>
         <source>ARGH! Something went wrong, series&apos; positions may be different.</source>
         <translation>ARGH! Qualcosa è andato storto, la posizione delle serie potrebbe essere diversa.</translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="463"/>
+        <location filename="manager.cpp" line="477"/>
         <source>Error while writing into database: </source>
         <translation>Errore in fase di scrittura nel database: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="262"/>
+        <location filename="manager.cpp" line="272"/>
         <source>Error while saving series: </source>
         <translation>Errore in fase di salvataggio della serie: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="293"/>
+        <location filename="manager.cpp" line="303"/>
         <source>Error while deleting data from database: </source>
         <translation>Errore in fase di eliminazione dati dal database: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="327"/>
+        <location filename="manager.cpp" line="337"/>
         <source>Error while updating series in the database: </source>
         <translation>Errore in fase di aggiornamento del database: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="359"/>
+        <location filename="manager.cpp" line="369"/>
         <source>Error while renaming series: </source>
         <translation>Errore in fase di rinominazione della serie: </translation>
     </message>
     <message>
-        <location filename="manager.cpp" line="382"/>
+        <location filename="manager.cpp" line="392"/>
         <source>Error while repositioning series: </source>
         <translation>Errore in fase di riposizionamento della serie: </translation>
     </message>
@@ -369,7 +437,7 @@ appositi campi e premere il pulsante Salva.</translation>
 You will be able to change name and positions (the display order)
 of every series. You can also delete them.</source>
         <translation>Per effettuare delle modifiche, premi il pulsante Modifica.
-Potrai camviare nome e posizione (l&apos;ordine di visualizzazione) di
+Potrai cambiare nome e posizione (l&apos;ordine di visualizzazione) di
 ogni serie. Puoi anche cancellarle.</translation>
     </message>
     <message>

@@ -6,13 +6,23 @@
 #include "insertdialog.h"
 #include "modifydialog.h"
 #include "tutorialdialog.h"
+#include "aboutdialog.h"
 #include <QWidget>
 #include <sqlite3.h>
 #include <string>
 #include <dirent.h>
 #include <vector>
 #include <unistd.h>
+
+#ifdef _WIN32
+
+#include <shlobj.h>
+
+#elif __unix__
+
 #include <pwd.h>
+
+#endif
 
 using namespace std;
 
@@ -41,6 +51,7 @@ public slots:
     void changeSeriesPosition(int ID, int oldPos, int newPos);
     void orderSeries();
     void changes();
+    void openAbout();
 
 private:
 
@@ -52,7 +63,9 @@ private:
     MainWindow* w;
     InsertDialog* insSeries;
     ModifyDialog* modSeries;
+    AboutDialog* aboutSeries;
     QPushButton* btnAddSeries, *btnSaveAll, *btnModify;
+    QAction* exitAction, *aboutAction;
     sqlite3* db;
     string mainFolder;
     vector<Series*> series_array;

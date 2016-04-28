@@ -20,26 +20,30 @@ SOURCES += main.cpp\
     manager.cpp \
     insertdialog.cpp \
     modifydialog.cpp \
-    tutorialdialog.cpp
+    tutorialdialog.cpp \
+    aboutdialog.cpp \
+#    sqlite3.c			#only for Windows
 
 HEADERS  += mainwindow.h \
     series.h \
     manager.h \
     insertdialog.h \
     modifydialog.h \
-    tutorialdialog.h
+    tutorialdialog.h \
+    aboutdialog.h \
+#    sqlite3.h			#only for Windows
 
 FORMS    += mainwindow.ui \
     insertdialog.ui \
     modifydialog.ui \
-    tutorialdialog.ui
+    tutorialdialog.ui \
+    aboutdialog.ui
 
 RESOURCES += \
     resources.qrc
 
 TRANSLATIONS = series_it.ts
 
-ICON = imgs/app.ico
+RC_FILE = series.rc
 
-unix|win32: LIBS += -lsqlite3
-
+unix: LIBS += -lsqlite3

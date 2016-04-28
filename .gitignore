@@ -1,5 +1,6 @@
 # User files created by Qt Creator
 *.pro.user
+*.pro.user*
 
 # Debian packages
 *.deb

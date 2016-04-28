@@ -7,9 +7,20 @@ Manager::Manager(QObject *parent){
     w = new MainWindow();
     w->show();
 
+#ifdef _WIN32
+    WCHAR temp[100];
+    HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, temp);
+
+    wstring ws(temp);
+    string str(ws.begin(), ws.end());
+
+    mainFolder = str;
+    mainFolder.append("\series");
+#elif __unix__
     struct passwd *pw = getpwuid(getuid());
     mainFolder = pw->pw_dir;
     mainFolder = mainFolder + "/.series";
+#endif
 
     btnSaveAll = w->findChild<QPushButton*>("btnSaveAll");
     connect(btnSaveAll, SIGNAL(released()), this, SLOT(saveAll()));
@@ -20,10 +31,17 @@ Manager::Manager(QObject *parent){
     btnModify = w->findChild<QPushButton*>("btnModify");
     connect(btnModify, SIGNAL(released()), this, SLOT(modifySeries()));
 
+    exitAction = w->findChild<QAction*>("actionExit");
+    connect(exitAction, SIGNAL(triggered()), w, SLOT(close()));
+
+    aboutAction = w->findChild<QAction*>("actionAbout");
+    connect(aboutAction, SIGNAL(triggered()), this, SLOT(openAbout()));
+
     insSeries = new InsertDialog(w);
     insSeries->setWindowModality(Qt::WindowModal);
     modSeries = new ModifyDialog(w);
     modSeries->setWindowModality(Qt::WindowModal);
+    aboutSeries = new AboutDialog(w);
 
     connect(insSeries, SIGNAL(newSeries(QString, QString, QString)), this, SLOT(addSeries(QString, QString, QString)));
     connect(modSeries, SIGNAL(del(int)), this, SLOT(deleteSeries(int)));
@@ -80,7 +98,6 @@ void Manager::main(){
         openDb(false);
         loadSeries();
     }
-
 }
 
 //check if the main folder exists; if not, create it
@@ -412,7 +429,11 @@ void Manager::changes(){
     }
 }
 
-//private funcitions
+void Manager::openAbout(){
+    aboutSeries->show();
+}
+
+//private functions
 
 void Manager::bubbleSort(){
     int length = series_array.size();
