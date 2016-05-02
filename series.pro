@@ -11,9 +11,6 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = series
 TEMPLATE = app
 
-INCLUDEPATH += /usr/lib/x86_64-linux-gnu
-DEPENDPATH += /usr/lib/x86_64-linux-gnu
-
 SOURCES += main.cpp\
         mainwindow.cpp \
     series.cpp \
