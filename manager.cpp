@@ -15,7 +15,13 @@ Manager::Manager(QObject *parent){
     string str(ws.begin(), ws.end());
 
     mainFolder = str;
-    mainFolder.append("\series");
+    mainFolder.append("\\series");
+
+#elif __APPLE__
+    struct passwd *pw = getpwuid(getuid());
+    mainFolder = pw->pw_dir;
+    mainFolder = mainFolder + "/.series";
+
 #elif __unix__
     struct passwd *pw = getpwuid(getuid());
     mainFolder = pw->pw_dir;

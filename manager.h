@@ -18,6 +18,10 @@
 
 #include <shlobj.h>
 
+#elif __APPLE__
+
+#include <pwd.h>
+
 #elif __unix__
 
 #include <pwd.h>

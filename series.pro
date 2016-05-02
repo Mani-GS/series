@@ -44,6 +44,8 @@ RESOURCES += \
 
 TRANSLATIONS = series_it.ts
 
-RC_FILE = series.rc
+macx: ICONS = imgs/series.icns
+
+win32: RC_FILE = series.rc
 
 unix: LIBS += -lsqlite3
