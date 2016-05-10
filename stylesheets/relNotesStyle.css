@@ -1,0 +1,22 @@
+td{
+  border: solid 2px #000000;
+}
+
+table{
+  width: 100%;
+}
+
+table, td{
+  border-collapse: collapse;
+}
+
+.title{
+  background-image: url("../images/header-bg.jpg");
+  color: #FFFFFF;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 20px;
+}
+
+.content{
+  height: 50px;
+}
