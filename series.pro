@@ -9,6 +9,7 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = series
+VERSION = 1.1
 TEMPLATE = app
 
 SOURCES += main.cpp\
@@ -29,6 +30,11 @@ HEADERS  += mainwindow.h \
     tutorialdialog.h \
     aboutdialog.h \
 #    sqlite3.h			#only for Windows
+
+# Fervor autoupdater
+!include("fervor/Fervor.pri") {
+    error("Unable to include Fervor autoupdater.")
+}
 
 FORMS    += mainwindow.ui \
     insertdialog.ui \

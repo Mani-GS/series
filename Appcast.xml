@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss
+	version="1.2"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+	xmlns:fervor="https://github.com/pypt/fervor"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+	<channel>
+		<title>Series changelog</title>
+		<link>https://github.com/Mani-GS/series/feature_updateChecker/Appcast.xml</link>
+		<description>Added Fervor update checker</description>
+		<language>en</language>
+		<atom:link href="https://github.com/Mani-GS/series/gh-pages/Appcast.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>Version 1.2 (1 new feature)</title>
+			<pubDate>Mon, 09 Jan 2006 19:20:11 +0000</pubDate>
+			<guid isPermaLink="true">https://mani-gs.github.io/series/relNotes.html</guid>
+
+			<sparkle:releaseNotesLink>https://mani-gs.github.io/series/relNotes.html</sparkle:releaseNotesLink>
+
+
+			<!--
+				See QtGlobal's QT_OS_* constants for valid platform versions.
+			-->
+
+			<!-- Windows version. -->
+			<enclosure
+				url="http://mani-gs.github.io/series/"
+				fervor:version="1.2"
+				fervor:platform="Q_OS_WIN32"
+				length="1656492"
+				type="application/octet-stream" />
+
+			<!-- Linux version. -->
+			<enclosure
+				url="http://mani-gs.github.io/series/"
+				fervor:version="1.2"
+				fervor:platform="Q_OS_LINUX"
+				length="1618935"
+				type="application/octet-stream" />
+
+			<!-- OS X version.  -->
+			<enclosure
+				url="http://you.com/app/Your%20Great%20App%202.0%20OS%20X.zip"
+				sparkle:version="1.2"
+				fervor:platform="Q_OS_MAC"
+				length="1623481"
+				type="application/octet-stream" />
+				<!--sparkle:dsaSignature="BAFJW4B6B1K1JyW30nbkBwainOzrN6EQuAh" />-->
+
+		</item>
+
+	</channel>
+</rss>
