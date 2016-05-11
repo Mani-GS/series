@@ -14,11 +14,11 @@ int main(int argc, char *argv[]){
     QApplication a(argc, argv);
 
     QApplication::setApplicationName("Series");
-    QApplication::setApplicationVersion("1.1");
+    QApplication::setApplicationVersion("1.2");
     QApplication::setOrganizationName("Mani");
     QApplication::setOrganizationDomain("Mani.it");
 
-    FvUpdater::sharedUpdater()->SetFeedURL("https://raw.github.com/Mani-GS/series/feature_updateChecker/Appcast.xml");
+    FvUpdater::sharedUpdater()->SetFeedURL("https://raw.github.com/Mani-GS/series/gh-pages/Appcast.xml");
     FvUpdater::sharedUpdater()->CheckForUpdates();
 
     QTranslator translator;

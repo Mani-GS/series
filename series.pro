@@ -9,8 +9,14 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = series
-VERSION = 1.1
+VERSION = 1.2
 TEMPLATE = app
+
+DESTDIR = bin
+MOC_DIR = build/moc
+RCC_DIR = build/rcc
+UI_DIR = build/ui
+OBJECTS_DIR = build/o
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -19,8 +25,10 @@ SOURCES += main.cpp\
     insertdialog.cpp \
     modifydialog.cpp \
     tutorialdialog.cpp \
-    aboutdialog.cpp \
+    aboutdialog.cpp 
 #    sqlite3.c			#only for Windows
+
+win32: SOURCES += sqlite3.c
 
 HEADERS  += mainwindow.h \
     series.h \
@@ -28,8 +36,10 @@ HEADERS  += mainwindow.h \
     insertdialog.h \
     modifydialog.h \
     tutorialdialog.h \
-    aboutdialog.h \
+    aboutdialog.h 
 #    sqlite3.h			#only for Windows
+
+win32: HEADERS += sqlite3.h
 
 # Fervor autoupdater
 !include("fervor/Fervor.pri") {
