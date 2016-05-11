@@ -16,9 +16,9 @@
 		<item>
 			<title>Version 1.2 (1 new feature)</title>
 			<pubDate>Mon, 09 Jan 2006 19:20:11 +0000</pubDate>
-			<guid isPermaLink="true">http://pypt.github.com/fervor/RelNotes.html#v2.0</guid>
+			<!--<guid isPermaLink="true">http://pypt.github.com/fervor/RelNotes.html#v2.0</guid>-->
 
-			<sparkle:releaseNotesLink>http://pypt.github.com/fervor/RelNotes.html#v2.0</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink>http://mani-gs.github.io/series/relNotes.html</sparkle:releaseNotesLink>
 
 
 			<!--
@@ -27,21 +27,21 @@
 
 			<!-- Windows version. -->
 			<enclosure
-				url="http://mani-gs.github.io/series/gh-pages/binaries/Series_1.1_installer.exe"
+				url="http://mani-gs.github.io/series/binaries/Series_1.1_installer.exe"
 				fervor:version="1.2"
 				fervor:platform="Q_OS_WIN32"
 				type="application/octet-stream" />
 
 			<!-- Linux version. -->
 			<enclosure
-				url="http://mani-gs.github.io/series/"
+				url="http://mani-gs.github.io/series/changelog"
 				fervor:version="1.2"
 				fervor:platform="Q_OS_LINUX"
 				type="application/octet-stream" />
 
 			<!-- OS X version.  -->
 			<enclosure
-				url="http://mani-gs.github.io/series/gh-pages/binaries/Series_1.1.dmg"
+				url="http://mani-gs.github.io/series/binaries/Series_1.1.dmg"
 				sparkle:version="1.2"
 				fervor:platform="Q_OS_MAC"
 				type="application/octet-stream" />
