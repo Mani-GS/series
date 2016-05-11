@@ -16,9 +16,9 @@
 		<item>
 			<title>Version 1.2 (1 new feature)</title>
 			<pubDate>Mon, 09 Jan 2006 19:20:11 +0000</pubDate>
-			<guid isPermaLink="true">https://mani-gs.github.io/series/relNotes.html</guid>
+			<guid isPermaLink="true">http://pypt.github.com/fervor/RelNotes.html#v2.0</guid>
 
-			<sparkle:releaseNotesLink>https://mani-gs.github.io/series/relNotes.html</sparkle:releaseNotesLink>
+			<sparkle:releaseNotesLink>http://pypt.github.com/fervor/RelNotes.html#v2.0</sparkle:releaseNotesLink>
 
 
 			<!--
@@ -27,10 +27,9 @@
 
 			<!-- Windows version. -->
 			<enclosure
-				url="http://mani-gs.github.io/series/"
+				url="http://mani-gs.github.io/series/gh-pages/binaries/Series_1.1_installer.exe"
 				fervor:version="1.2"
 				fervor:platform="Q_OS_WIN32"
-				length="1656492"
 				type="application/octet-stream" />
 
 			<!-- Linux version. -->
@@ -38,17 +37,14 @@
 				url="http://mani-gs.github.io/series/"
 				fervor:version="1.2"
 				fervor:platform="Q_OS_LINUX"
-				length="1618935"
 				type="application/octet-stream" />
 
 			<!-- OS X version.  -->
 			<enclosure
-				url="http://you.com/app/Your%20Great%20App%202.0%20OS%20X.zip"
+				url="http://mani-gs.github.io/series/gh-pages/binaries/Series_1.1.dmg"
 				sparkle:version="1.2"
 				fervor:platform="Q_OS_MAC"
-				length="1623481"
 				type="application/octet-stream" />
-				<!--sparkle:dsaSignature="BAFJW4B6B1K1JyW30nbkBwainOzrN6EQuAh" />-->
 
 		</item>
 
