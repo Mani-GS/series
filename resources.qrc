@@ -16,5 +16,6 @@
     </qresource>
     <qresource prefix="/translations">
         <file>series_it.qm</file>
+	<file>fervor/fervor_it.qm</file>
     </qresource>
 </RCC>

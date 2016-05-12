@@ -21,12 +21,14 @@ int main(int argc, char *argv[]){
     FvUpdater::sharedUpdater()->SetFeedURL("https://raw.github.com/Mani-GS/series/gh-pages/Appcast.xml");
     FvUpdater::sharedUpdater()->CheckForUpdates();
 
-    QTranslator translator;
+    QTranslator translator, fTranslator;
     QString language = QLocale::system().name();
 
     if(language == "it_IT"){
         translator.load(":/translations/series_it");
+        fTranslator.load(":/translations/fervor/fervor_it");
         a.installTranslator(&translator);
+        a.installTranslator(&fTranslator);
     }
 
     Manager* manag = new Manager();
