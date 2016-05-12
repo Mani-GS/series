@@ -4,3 +4,10 @@
 
 # Debian packages
 *.deb
+
+# Windows executable
+*.exe
+
+# MAC OS binaries
+*.app
+*.dmg

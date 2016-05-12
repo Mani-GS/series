@@ -11,6 +11,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = series
 VERSION = 1.2
 TEMPLATE = app
+CONFIG += warn_on
 
 DESTDIR = bin
 MOC_DIR = build/moc
@@ -26,7 +27,6 @@ SOURCES += main.cpp\
     modifydialog.cpp \
     tutorialdialog.cpp \
     aboutdialog.cpp 
-#    sqlite3.c			#only for Windows
 
 win32: SOURCES += sqlite3.c
 
@@ -37,7 +37,6 @@ HEADERS  += mainwindow.h \
     modifydialog.h \
     tutorialdialog.h \
     aboutdialog.h 
-#    sqlite3.h			#only for Windows
 
 win32: HEADERS += sqlite3.h
 
