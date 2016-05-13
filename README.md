@@ -29,7 +29,7 @@ To install this program make sure you've installed the following libraries:
 - qtcreator (optional);
 - libsqlite3-dev.
 
-First of all, download the latest release, then extract the source code in one folder.
+First of all, download the [latest release](https://github.com/Mani-GS/series/releases/latest), then extract the source code in one folder.
 Open a terminal in that folder and execute:
 ```script
 $ qmake -config release
@@ -58,7 +58,7 @@ $ PATH=/users/<your_user>/Qt/<qt_version>/bin:$PATH
 $ export PATH
 ```
 
-First of all, download the latest release, then extract the source code in one folder. Open a terminal in that folder and execute:
+First of all, download the [latest release](https://github.com/Mani-GS/series/releases/latest), then extract the source code in one folder. Open a terminal in that folder and execute:
 
 ```script
 $ qmake -config release
@@ -76,37 +76,29 @@ Double click the APP file, named **series**, and the program will start!
 ## Windows OS
 
 First, _download Qt Creator_.
-Then, once you downloaded the latest release, open the **series.pro** file with your favourite text editor to include the sqlite3.c and sqlite3.h files:
+Then, once you downloaded the [latest release](https://github.com/Mani-GS/series/releases/latest), open the **series.pro** file with your favourite text editor to remove the first lines:
 
 ```script
 File: series.pro
 [...]
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    series.cpp \
-    manager.cpp \
-    insertdialog.cpp \
-    modifydialog.cpp \
-    tutorialdialog.cpp \
-    aboutdialog.cpp \
- #    sqlite3.c			#only for Windows
+QT       += core gui
 
-HEADERS  += mainwindow.h \
-    series.h \
-    manager.h \
-    insertdialog.h \
-    modifydialog.h \
-    tutorialdialog.h \
-    aboutdialog.h \
- #    sqlite3.h			#only for Windows
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-FORMS    += mainwindow.ui \
-    insertdialog.ui \
-    modifydialog.ui \
+TARGET = series
+VERSION = 1.2
+TEMPLATE = app
+CONFIG += warn_on
+
+#DESTDIR = bin
+#MOC_DIR = build/moc
+#RCC_DIR = build/rcc
+#UI_DIR = build/ui
+#OBJECTS_DIR = build/o
 [...]
 ```
 
-You just have to remove the # character at the beginning of the two lines that have (before sqlite3.c and sqlite3.h). Then, open the project with Qt Creator, select Build -> Release and build it.
+You just have to put the # character at the beginning of the last four lines that have it in the above example. Then, open the project with Qt Creator, select Build -> Release and build it.
 To make it works (in your PC, which has Qt libraries installed) you need the following .dll files in the .exe file folder:
 
 ```script
@@ -116,6 +108,7 @@ libwinpthread-1.dll
 Qt5Core.dll
 Qt5Gui.dll
 Qt5widgets.dll
+Qt5Network.dll
 ```
 
 If you want to run it on another PC (a PC without Qt libraries), you have to make a folder like this:
@@ -133,6 +126,7 @@ If you want to run it on another PC (a PC without Qt libraries), you have to mak
 -   Qt5Core.dll
 -   Qt5Gui.dll
 -   Qt5widgets.dll
+-   Qt5Network.dll
 -   series.exe
 ```
 
