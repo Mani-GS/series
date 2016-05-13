@@ -27,7 +27,7 @@
 
 			<!-- Windows version. -->
 			<enclosure
-				url="http://mani-gs.github.io/series/binaries/Series_1.1_installer.exe"
+				url="https://github.com/Mani-GS/series/releases/download/v1.2/Series_1.2_installer.exe"
 				fervor:version="1.2"
 				fervor:platform="Q_OS_WIN32"
 				type="application/octet-stream" />
@@ -35,13 +35,13 @@
 			<!-- Linux version. -->
 			<enclosure
 				url="http://mani-gs.github.io/series/changelog"
-				fervor:version="1.3"
+				fervor:version="1.2"
 				fervor:platform="Q_OS_LINUX"
 				type="application/octet-stream" />
 
 			<!-- OS X version.  -->
 			<enclosure
-				url="http://mani-gs.github.io/series/binaries/Series_1.1.dmg"
+				url="https://github.com/Mani-GS/series/releases/download/v1.2/Series_1.2.dmg"
 				sparkle:version="1.2"
 				fervor:platform="Q_OS_MAC"
 				type="application/octet-stream" />

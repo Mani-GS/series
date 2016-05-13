@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/relNotesStyle.css" media="screen" />
     <link rel="icon" href="images/series_.png">
 
+    <script type="text/javascript" src="javascripts/changelog.js">
+    </script>
+    
     <title>Update</title>
     
     <style type="text/css">
@@ -27,7 +30,7 @@
     <header>
       <div class="inner">
         <h1>Update v1.2</h1>
-        <h2 id="title">Download now Series v1.2</h2>
+        <h2 id="sub_title">Download now Series v1.2</h2>
         <a href="https://github.com/Mani-GS/series" class="button"><small id="viewPrj">View project on</small> GitHub</a>
       </div>
     </header>
@@ -35,10 +38,9 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>
-	  <a id="series" class="anchor" href="#series" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h1>
+          <h1>Changelog</h1>
 
-	  <p>Series v1.2 is now available for Linux!</p>
+	  <p id="intro">Series v1.2 is now available for Linux!</p>
 	  
 	  <table>
 	    <tr>
@@ -46,7 +48,7 @@
 	    </tr>
 	    <tr>
 	      <td class="content">
-		Currently there are no bug to be fixed
+		<span id="bugfix">Currently there are no bug to be fixed</span>
 	      </td>
 	    </tr>
 	    
@@ -57,28 +59,65 @@
 	      <td>
 		v 1.2:
 		<ul>
-		  <li>Update checker implemented with Fervor library</li>
+		  <li id="feature_4">Added update checker implemented with Fervor library</li>
 		</ul>
 		v 1.1:
 		<ul>
-		  <li>Added about dialog</li>
-		  <li>Added C preprocessor tags</li>
+		  <li id="feature_3">Added about dialog</li>
+		  <li id="feature_2">Added C preprocessor tags</li>
 		</ul>
 		v 1.0:
 		<ul>
-		  <li>First stable release</li>
+		  <li id="feature_1">First stable release</li>
 		</ul>
 	      </td>
 	    </tr>
 	    
 	  </table>
+	  
+	  <hr />
+	  
+	  <h1 id="update_title">How to update</h1>
+	  
+	  <p id="update">You can update this program in some different ways, it depends on your OS.</p>
+	  
+	  <h2 id="compile_title">Building source code</h2>
+	  
+	  <p id="compile">If your OS isn't Debian (or a Debian distro) or if you prefer to build it by yourself, you can simply download the <a href="https://github.com/Mani-GS/series/releases/latest" target="blank">latest release</a> and build it with this instructions
+	  (see <a href="index.html" target="blank">main page</a> to get more information):</p>
+	  
+	  <pre lang="script"><code>$ qmake -config release
+$ make
+</code></pre>
+	  
+	  <h2 id="download_title">Downloading .deb package</h2>
+	  
+	  <p id="download">Download the .deb package <strong>built on Debian 8 Jessie 64-bit</strong> and execute it. The OS will automatically update the program.</p>
+	  
+	  <h2 id="ppa_title">Updating from PPA (Ubuntu Trusty or newer only)</h2>
+	  
+	  <p id="ppa">If you're using Ubutnu Trusty or newer and you've installed the program from the PPA (ppa:mani-ddev/series) you can update it executing:</p>
+	  
+	  <pre lang="script"><code>$ sudo apt-get update
+$ sudo apt-get upgrade
+</code></pre>
 
         </section>
 
         <aside id="sidebar">
-
+	  <h2>Source <small>code</small></h2>
+          <a href="https://github.com/Mani-GS/series/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Mani-GS/series/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+        
+        
 	  <h2>Linux <small>pre-built binary</small></h2>
-	  <a href="binaries/series_1.1-1_amd64.deb" class="button">
+	  <a href="https://github.com/Mani-GS/series/releases/download/v1.2/series_1.2-1_amd64.deb" class="button">
             <small>Download</small>
             .deb file
           </a>

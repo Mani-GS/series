@@ -32,8 +32,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>
-<a id="series" class="anchor" href="#series" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Series</h1>
+          <h1>Series</h1>
 
 <p id="introduction">Keep track of your favourite TV series!
 With this simple program you can create a sqlite db and add the last episode/season you watched. You can do this for every series you want!
@@ -49,17 +48,16 @@ It's available on <strong>Linux</strong> (Debian distros), <strong>Windows</stro
 
 <hr />
 
-<h1>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h1>
+<h1>Features</h1>
 
 <ul>
 <li id="features_1">Add new TV Series to a sqlite database;</li>
 <li id="features_2">Keep track about last season and episode watched, with a "finish" flag used at users leisure;</li>
-<li id="features_3">Rename series, reorder them or remove them.</li>
+<li id="features_3">Rename series, reorder them or remove them;</li>
+<li id="features_4">Automatic checking for new updates.</li>
 </ul>
 
-<h1>
-<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TO DO</h1>
+<h1>TO DO</h1>
 
 <ul>
 <li id="todo_1">Implement cloud service to share the db with other devices</li>
@@ -67,19 +65,16 @@ It's available on <strong>Linux</strong> (Debian distros), <strong>Windows</stro
 
 <hr />
 
-<h1 id="install">
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install</h1>
+<h1 id="install">How to install</h1>
 
 <p id="install_intro">How to install the program on your OS.</p>
 
 
-<h2 id="linux">
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux OS</h2>
+<h2 id="linux">Linux OS</h2>
 
 <p id="linux_intro">Pre-built binary available for download. The .deb package has been built on <strong>Debian 8 Jessie 64-bit</strong>.</p>
 
-<h3 id="linux_install_1">
-<a id="download-source" class="anchor" href="#download-source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Download source code and build it by yourself</h3>
+<h3 id="linux_install_1">Download source code and build it by yourself</h3>
 
 <p id="linux_install_1_1">To build this program make sure you installed the following libraries:</p>
 
@@ -89,7 +84,7 @@ It's available on <strong>Linux</strong> (Debian distros), <strong>Windows</stro
 <li>libsqlite3-dev.</li>
 </ul>
 
-<p id="linux_install_1_2">First of all, download the latest release, then extract the source code in one folder.
+<p id="linux_install_1_2">First of all, download the <a href="https://github.com/Mani-GS/series/releases/latest" target="blank">latest release</a>, then extract the source code in one folder.
 Open a terminal in that folder and execute:</p>
 
 <pre lang="script"><code>$ qmake -config release
@@ -99,8 +94,7 @@ $ make
 <p id="linux_install_1_3">Double click the ELF file, named <strong>series</strong>, and the program will start! <br />
 If you want to create a .desktop file you can use series_.png image (128x128) as file icon.</p>
 
-<h3 id="linux_install_2">
-<a id="download-ppa" class="anchor" href="#download-ppa" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install on Ubuntu Trusty or newer</h3>
+<h3 id="linux_install_2">Install on Ubuntu Trusty or newer</h3>
 
 <p id="linux_install_2_1">You can download and install the binary package from the PPA repository <strong>mani-ddev/series</strong>. Open a terminal and execute:</p>
 
@@ -111,8 +105,7 @@ $ sudo apt-get install series
 
 <hr />
 
-<h2 id="mac">
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mac OS X</h2>
+<h2 id="mac">Mac OS X</h2>
 
 <p id="mac_intro">Pre-built binary available for download. The .dmg file has been built on <strong>Mac OS X 10.11 El Capitan 64-bit</strong>.</p>
 
@@ -123,7 +116,7 @@ Also be sure to export the <strong><u>qmake path</u></strong> in this way:</p>
 $ export PATH
 </code></pre>
 
-<p id="mac_install_2">First of all, download the latest release, then extract the source code in one folder.
+<p id="mac_install_2">First of all, download the <a href="https://github.com/Mani-GS/series/releases/latest" target="blank">latest release</a>, then extract the source code in one folder.
 Open a terminal in that folder and execute:</p>
 
 <pre lang="script"><code>$ qmake -config release
@@ -139,42 +132,33 @@ $ make
 
 <hr />
 
-<h2 id="windows">
-<a id="how-to-install" class="anchor" href="#how-to-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Windows OS</h2>
+<h2 id="windows">Windows OS</h2>
 
 <p id="windows_intro">Pre-built binary available for download. The .exe file has been built on <strong>Windows 10 64-bit</strong> (it works also on 32-bit version).</p>
 
 <p id="windows_install_1">First, <a href="http://www.qt.io/download/" target="blank">download Qt Creator</a>.<br />
-Then, once you downloaded the latest release, open the <strong>series.pro</strong> file with your favourite text editor to include the sqlite3.c and sqlite3.h files:</p>
+Then, once you downloaded the <a href="https://github.com/Mani-GS/series/releases/latest" target="blank">latest release</a>, open the <strong>series.pro</strong> file with your favourite text editor to remove some lines:</p>
 
 <pre lang="script"><code>File: series.pro
 [...]
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    series.cpp \
-    manager.cpp \
-    insertdialog.cpp \
-    modifydialog.cpp \
-    tutorialdialog.cpp \
-    aboutdialog.cpp \
-#    sqlite3.c			#only for Windows
+QT       += core gui
 
-HEADERS  += mainwindow.h \
-    series.h \
-    manager.h \
-    insertdialog.h \
-    modifydialog.h \
-    tutorialdialog.h \
-    aboutdialog.h \
-#    sqlite3.h			#only for Windows
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-FORMS    += mainwindow.ui \
-    insertdialog.ui \
-    modifydialog.ui \
+TARGET = series
+VERSION = 1.2
+TEMPLATE = app
+CONFIG += warn_on
+
+#DESTDIR = bin
+#MOC_DIR = build/moc
+#RCC_DIR = build/rcc
+#UI_DIR = build/ui
+#OBJECTS_DIR = build/o
 [...]
 </code></pre>
 
-<p id="windows_install_2">You just have to remove the # character at the beginning of the two lines that have (before sqlite3.c and sqlite3.h). Then, open the project with Qt Creator, select Build -> Release and build it. <br />
+<p id="windows_install_2">You just have to put the # character at the beginning of the last four lines that have it in the above example. Then, open the project with Qt Creator, select Build -> Release and build it. <br />
 To make it works (in your PC, which has Qt libraries installed) you need the following .dll files in the .exe file folder:</p>
 
 <pre lang="script"><code>libgcc_s_dw2-1.dll
@@ -183,6 +167,7 @@ libwinpthread-1.dll
 Qt5Core.dll
 Qt5Gui.dll
 Qt5widgets.dll
+Qt5Network.dll
 </code></pre>
 
 <p id="windows_install_3">If you want to run it on another PC (a PC without Qt libraries), you have to make a folder like this:</p>
@@ -199,6 +184,7 @@ Qt5widgets.dll
 -   Qt5Core.dll
 -   Qt5Gui.dll
 -   Qt5widgets.dll
+-   Qt5Network.dll
 -   series.exe
 </code></pre>
 
@@ -218,24 +204,24 @@ Qt5widgets.dll
           </a>
 
 	  <h2>Linux <small>pre-built binary</small></h2>
-	  <a href="binaries/series_1.1-1_amd64.deb" class="button">
+	  <a href="https://github.com/Mani-GS/series/releases/download/v1.2/series_1.2-1_amd64.deb" class="button">
             <small>Download</small>
             .deb file
           </a>
 
 	  <h2>Mac OS X <small>pre-built binary</small></h2>
-	  <a href="binaries/Series_1.1.dmg" class="button">
+	  <a href="https://github.com/Mani-GS/series/releases/download/v1.2/Series_1.2.dmg" class="button">
             <small>Download</small>
             .dmg file
           </a>
 
 	  <h2>Windows <small>pre-built binary</small></h2>
-	  <a href="binaries/Series_1.1_installer.exe" class="button">
+	  <a href="https://github.com/Mani-GS/series/releases/download/v1.2/Series_1.2_installer.exe" class="button">
             <small>Download</small>
             .exe file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/Mani-GS/series"></a> is maintained by <a href="https://github.com/Mani-GS">Mani-GS</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/Mani-GS/series"></a> is maintained by <a href="https://github.com/Mani-GS">Mani-GS</a> (Giorgio Sartore).</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
