@@ -13,6 +13,12 @@ It's available on **Linux** (Debian distros), **Windows** and **Mac OS X**. You 
 # TO DO
 - [ ] Implement cloud service to share the db with other devices
 
+# Screenshots
+
+![](http://mani-gs.github.io/series/images/main.png "Main view")
+![](http://mani-gs.github.io/series/images/insert.png "Insert new series")
+![](http://mani-gs.github.io/series/images/modify.png "Modify series")
+
 # How to install
 
 ## Linux OS
