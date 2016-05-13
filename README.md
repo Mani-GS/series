@@ -75,8 +75,8 @@ Double click the APP file, named **series**, and the program will start!
 
 ## Windows OS
 
-First, _download Qt Creator_.
-Then, once you downloaded the [latest release](https://github.com/Mani-GS/series/releases/latest), open the **series.pro** file with your favourite text editor to remove the first lines:
+First, [download Qt Creator](http://www.qt.io/download/).
+Then, once you downloaded the [latest release](https://github.com/Mani-GS/series/releases/latest), open the **series.pro** file with your favourite text editor to remove some lines:
 
 ```script
 File: series.pro
