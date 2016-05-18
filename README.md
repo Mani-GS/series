@@ -7,11 +7,13 @@ It's available on **Linux** (Debian distros), **Windows** and **Mac OS X**. You 
 # Features
 - [x] Add new TV Series to a sqlite database;
 - [x] Keep track about last season and episode watched, with a "finish" flag used at users leisure;
-- [x] Rename series, reorder them or remove them.
+- [x] Rename series, reorder them or remove them;
 - [x] Automatic checking for new updates.
 
 # TO DO
-- [ ] Implement cloud service to share the db with other devices
+- [ ] Assign hyperlinks to the series and open them with the preferred browser;
+- [ ] Assign icon images to the series;
+- [ ] Implement cloud service to share the db with other devices.
 
 # Screenshots
 
