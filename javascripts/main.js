@@ -37,6 +37,8 @@ function changeLanguage(language){
 	document.getElementById("features_4").innerHTML = language.features_4;
 
 	document.getElementById("todo_1").innerHTML = language.todo_1;
+	document.getElementById("todo_2").innerHTML = language.todo_2;
+	document.getElementById("todo_3").innerHTML = language.todo_3;
 
 	document.getElementById("install").innerHTML = language.install;
 	document.getElementById("install_intro").innerHTML = language.install_intro;
@@ -73,7 +75,9 @@ lang_IT={
 	features_3: "Rinominazione riordinamento e rimozione delle serie;",
 	features_4: "Controllo automatico della disponibilità di nuovi aggiornamenti.",
 
-	todo_1: "Implementare il servizio cloud per condividere il database con altri dispositivi.",
+	todo_1: "Implementare il servizio cloud per condividere il database con altri dispositivi;",
+	todo_2: "Assegnare hyperlink alle serie e aprirli con il browser preferito;",
+	todo_3: "Assegnare immagini icona alle serie.",
 
 	install: "Installazione",
 	install_intro: "Come installare il programma nel tuo sistema operativo.",
